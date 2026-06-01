@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Inter:wght@400;500;600&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  @apply bg-cream-50 text-gray-800 font-sans;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  @apply font-serif font-semibold tracking-tight;
+}
+
+h1 {
+  @apply text-5xl md:text-6xl;
+}
+
+h2 {
+  @apply text-4xl md:text-5xl;
+}
+
+h3 {
+  @apply text-3xl md:text-4xl;
+}
+
+p {
+  @apply text-base leading-relaxed;
+}
+
+a {
+  @apply transition-colors duration-300;
+}
+
+button {
+  @apply transition-all duration-300;
+}
+
+.container-custom {
+  @apply max-w-7xl mx-auto px-4 md:px-6 lg:px-8;
+}
+
+.section-padding {
+  @apply py-20 md:py-28 lg:py-36;
+}
+
+.text-neutral {
+  @apply text-gray-600;
+}
+
+.text-light {
+  @apply text-gray-500;
+}
+
+.underline-accent {
+  @apply relative inline-block;
+}
+
+.underline-accent::after {
+  @apply absolute bottom-0 left-0 w-12 h-1 bg-rose-400 rounded-full;
+  content: '';
+  bottom: -8px;
+}

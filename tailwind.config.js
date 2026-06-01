@@ -1,0 +1,75 @@
+/** @type {import('tailwindcss').Config} */
+module.exports = {
+  content: [
+    './src/pages/**/*.{js,ts,jsx,tsx,mdx}',
+    './src/components/**/*.{js,ts,jsx,tsx,mdx}',
+    './src/app/**/*.{js,ts,jsx,tsx,mdx}',
+  ],
+  theme: {
+    extend: {
+      colors: {
+        beige: {
+          50: '#faf8f5',
+          100: '#f5f2ed',
+          200: '#ebe7e0',
+          300: '#e1dcd3',
+          400: '#d7d1c8',
+          500: '#cdc7ba',
+          600: '#b8b0a3',
+          700: '#a39999',
+          800: '#8e8280',
+          900: '#79696d',
+        },
+        cream: {
+          50: '#fffdf9',
+          100: '#fef9f2',
+          200: '#fef4e8',
+          300: '#fdeedd',
+          400: '#fce9d3',
+          500: '#fbe3c8',
+          600: '#e8cfb0',
+          700: '#d5bc99',
+          800: '#c2a882',
+          900: '#af946b',
+        },
+        rose: {
+          50: '#fdf6f4',
+          100: '#fce9e4',
+          200: '#f9d6cf',
+          300: '#f5c3ba',
+          400: '#f2b0a5',
+          500: '#ef9d90',
+          600: '#d97d70',
+          700: '#c35d50',
+          800: '#ad3d30',
+          900: '#971d10',
+        },
+      },
+      fontFamily: {
+        serif: ['Playfair Display', 'Cormorant Garamond', 'serif'],
+        sans: ['Inter', 'Segoe UI', 'sans-serif'],
+      },
+      fontSize: {
+        xs: ['12px', { lineHeight: '1.5' }],
+        sm: ['14px', { lineHeight: '1.6' }],
+        base: ['16px', { lineHeight: '1.7' }],
+        lg: ['18px', { lineHeight: '1.8' }],
+        xl: ['20px', { lineHeight: '1.8' }],
+        '2xl': ['24px', { lineHeight: '1.9' }],
+        '3xl': ['32px', { lineHeight: '1.9' }],
+        '4xl': ['40px', { lineHeight: '1.8' }],
+        '5xl': ['56px', { lineHeight: '1.8' }],
+      },
+      spacing: {
+        '128': '32rem',
+        '144': '36rem',
+      },
+      letterSpacing: {
+        tight: '-0.02em',
+        normal: '0em',
+        wide: '0.02em',
+      },
+    },
+  },
+  plugins: [],
+}
