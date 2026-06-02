@@ -140,7 +140,7 @@ export async function POST(request: NextRequest) {
   try {
     const data = await request.json()
 
-    const { name, email, phone, service, message } = data
+    const { name, email, service, message } = data
 
     if (!name || !email || !service || !message) {
       return NextResponse.json(
